@@ -6,7 +6,42 @@
     <link rel="stylesheet" href="./styles.css/styles.css">
 </head>
 <body>
-    <div class="contenedor-de-divs"></div>
+    <div class="contenedor-principal">
+        <div class="contenedor-botones">
+            <div class="contenedor-txtTituloh1">
+                <h1 class="txtTituloh1">Etch-a-Sketch</h1>
+            </div>
+            <div class="contenedor-sleccion-color CP">
+                <h2 class="txtTituloh2-1">selecion de color</h2>
+                <input type="color" id="color">
+                <button>usar color</button>
+            </div>
+            <div class="contnedor-tamaño-matris CP">
+                <div class="contenedor-txtTituloh2">
+                    <h2 class="txtTituloh2-2">Tamaño de Etch-a-Sketch</h2>
+                </div>
+                <div class="range-slider">
+                    <div class="contenedor-range-value">
+                        <input type="range" class="range" id="slider" value="16" min="16" max="100" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+                    </div>
+                    <div class="contenedor-show-vuale">
+                        <span id="rangeValue" class="rangeValue">16x16</span>
+                    </div>
+                </div>
+                <div class="contenedor-btnEnviarValor">
+                    <button class="btnEnviarValor">Usar valor</button>
+                </div>
+            </div>
+            <div class="contenedor-limpiar-matris CP">
+                <h2 class="txtTituloh2-3">Color aleatorio</h2>
+                <button>Color ramdom</button>
+                <h2 class="txtTituloh2-4">Limpiar Etch-a-Sketch</h2>
+                <button>Liampiar</button>
+            </div>
+        </div>
+        <div class="contenedor-de-divs"></div>
+        <div class="contenedor-espacio"></div>
+    </div>
     <script src="./script.js/logic.js"></script>
 </body>
 </html>
