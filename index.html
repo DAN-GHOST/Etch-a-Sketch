@@ -13,8 +13,8 @@
             </div>
             <div class="contenedor-sleccion-color CP">
                 <h2 class="txtTituloh2-1">selecion de color</h2>
-                <input type="color" id="color">
-                <button>usar color</button>
+                <input type="color" id="color" class="color" value="#000000">
+                <button class="btnUsarColor btn" value="#000000">usar color</button>
             </div>
             <div class="contnedor-tamaño-matris CP">
                 <div class="contenedor-txtTituloh2">
@@ -22,24 +22,22 @@
                 </div>
                 <div class="range-slider">
                     <div class="contenedor-range-value">
-                        <input type="range" class="range" id="slider" value="16" min="16" max="100" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+                        <input type="range" class="range" id="slider" value="16" min="16" max="64" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
                     </div>
                     <div class="contenedor-show-vuale">
                         <span id="rangeValue" class="rangeValue">16x16</span>
                     </div>
                 </div>
                 <div class="contenedor-btnEnviarValor">
-                    <button class="btnEnviarValor">Usar valor</button>
+                    <button class="btnEnviarValor btn">Usar valor</button>
                 </div>
             </div>
             <div class="contenedor-limpiar-matris CP">
-                <h2 class="txtTituloh2-3">Color aleatorio</h2>
-                <button>Color ramdom</button>
                 <h2 class="txtTituloh2-4">Limpiar Etch-a-Sketch</h2>
-                <button>Liampiar</button>
+                <button class="btnLiampiarDivs btn">Limpiar todo</button>
             </div>
         </div>
-        <div class="contenedor-de-divs"></div>
+        <div id="1" class="contenedor-de-divs"></div>
         <div class="contenedor-espacio"></div>
     </div>
     <script src="./script.js/logic.js"></script>

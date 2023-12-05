@@ -13,7 +13,9 @@ body{
 .contenedor-txtTituloh1,
 .contenedor-txtTituloh2,
 .contenedor-range-value,
-.contenedor-show-vuale{
+.contenedor-show-vuale,
+.contenedor-btnEnviarValor,
+.btn{
     display: flex;
 }
 
@@ -36,23 +38,23 @@ body{
     flex-direction: column;
 }
 
-
-.contenedor-de-divs{
-    margin: 50px 0px;
-}
-
-.contenedor-botones{
-    margin: 36px 0px;
-}
-
 .contenedor-botones .CP,
-.contenedor-txtTituloh1{
+.contenedor-txtTituloh1,
+.contenedor-btnEnviarValor{
     align-items: center;
-
 }
 
 .contenedor-range-value,
 .contenedor-show-vuale{
+    padding: 5px;
+}
+
+.CP,
+.contenedor-txtTituloh1,
+.range-slider{
+    border: 0.1px solid black;
+    border-radius: 20px;
+    margin: 5px;
     padding: 5px;
 }
 
@@ -62,16 +64,11 @@ body{
 
 .contenedor-de-divs{
     border: 0.1px solid black;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 2px;
     height: 1000px;
     width: 1000px;
     flex-shrink: 0.5;
 
-}
-
-.Divs2CambiantesRow:hover{
-    background: orange;
 }
 
 .contenedor-botones{
@@ -82,15 +79,6 @@ body{
 
 .range-slider{
     position: relative;
-}
-
-.CP,
-.contenedor-txtTituloh1,
-.range-slider{
-    border: 0.1px solid black;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
 }
 
 #rangeValue{
@@ -140,4 +128,41 @@ body{
 .contenedor-range-value{
     height: 5px;
     flex: 1 1 auto;
+}
+
+.contenedor-de-divs{
+    margin: 50px 0px;
+}
+
+.contenedor-botones{
+    margin: 36px 0px;
+}
+.contenedor-btnEnviarValor{
+    align-items: center;
+}
+
+.btn{
+padding: 1rem;
+font-weight: 400;
+background-color: deepskyblue;
+border-radius: 2rem;
+border: none;
+outline: none;
+cursor: pointer;
+font-size: 1rem;
+margin-top: 1rem;
+transition: all .2s ease-in;
+color: white;
+}
+
+.btn:hover{
+    background-color: aqua;
+}
+
+.Divs2CambiantesRow{
+    border:0.1px solid gray;
+}
+
+.Divs2CambiantesRow:hover{
+    background-color: aqua;
 }
