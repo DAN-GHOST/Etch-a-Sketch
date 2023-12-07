@@ -1,5 +1,8 @@
 body{
     font-family: Arial, 'Times New Roman', Verdana,'Franklin Gothic Medium', 'Arial Narrow', sans-serif, Times, serif, Geneva, Tahoma, sans-serif, 'Courier New', Courier, monospace, Georgia;
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); 
 }
 
 .contenedor-de-divs,
@@ -15,7 +18,10 @@ body{
 .contenedor-range-value,
 .contenedor-show-vuale,
 .contenedor-btnEnviarValor,
-.btn{
+.btn,
+.contenedor-color,
+.contenedor-btnUsarColor,
+.contenedor-btnLimpiarDivs{
     display: flex;
 }
 
@@ -23,7 +29,10 @@ body{
 .Divs2CambiantesRow,
 .CP,
 .contenedor-txtTituloh2,
-.contenedor-btnEnviarValor{
+.contenedor-btnEnviarValor,
+.contenedor-color,
+.contenedor-btnUsarColor,
+.contenedor-btnLimpiarDivs{
     flex: 1 1 auto;
 }
 .contenedor-botones,
@@ -40,7 +49,10 @@ body{
 
 .contenedor-botones .CP,
 .contenedor-txtTituloh1,
-.contenedor-btnEnviarValor{
+.contenedor-btnEnviarValor,
+.contenedor-color,
+.contenedor-btnUsarColor,
+.contenedor-btnLimpiarDivs{
     align-items: center;
 }
 
@@ -52,10 +64,40 @@ body{
 .CP,
 .contenedor-txtTituloh1,
 .range-slider{
-    border: 0.1px solid black;
-    border-radius: 20px;
     margin: 5px;
     padding: 5px;
+}
+
+.CP,
+.contenedor-de-divs,
+.contenedor-txtTituloh1{
+    background-color: white;
+    position: relative;
+}
+
+.CP,
+.contenedor-txtTituloh1{
+border-radius: 20px;
+}
+
+.CP::after,
+.contenedor-de-divs::after,
+.contenedor-txtTituloh1::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content:' ';
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    width: 100%;
+    height: 100%;
+    filter: blur(5.5px);
+    z-index: -1;
+}
+.CP::after,
+.contenedor-txtTituloh1::after{
+border-radius: 25px;
 }
 
 .contenedor-principal{
@@ -63,7 +105,6 @@ body{
 }
 
 .contenedor-de-divs{
-    border: 0.1px solid black;
     border-radius: 2px;
     height: 1000px;
     width: 1000px;
@@ -159,10 +200,29 @@ color: white;
     background-color: aqua;
 }
 
-.Divs2CambiantesRow{
-    border:0.1px solid gray;
-}
-
 .Divs2CambiantesRow:hover{
     background-color: aqua;
+}
+
+.range-slider,
+.contenedor-style-color{
+    border: 2px solid #8E2DE2;
+    border-radius: 20px;
+}
+
+#color{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#color::-webkit-color-swatch{
+    border-radius: 14px;
+    border: none;
 }
